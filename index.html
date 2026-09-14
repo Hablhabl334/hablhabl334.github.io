@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tube Autopilot — 4 automated Shorts channels</title>
+<style>
+  :root { --bg:#0b0f1a; --card:#141a2b; --txt:#e8ecf8; --mut:#93a0c2;
+          --acc1:#7c3aed; --acc2:#2dd4bf; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+         background:var(--bg); color:var(--txt); min-height:100vh; }
+  .hero { max-width:880px; margin:0 auto; padding:64px 20px 28px; text-align:center; }
+  .hero h1 { font-size:clamp(30px,6vw,46px); letter-spacing:-.5px; }
+  .hero h1 span { background:linear-gradient(90deg,var(--acc1),var(--acc2));
+                  -webkit-background-clip:text; background-clip:text;
+                  color:transparent; }
+  .hero p { color:var(--mut); margin-top:12px; font-size:17px; }
+  .grid { max-width:880px; margin:28px auto 0; padding:0 20px;
+          display:grid; gap:16px; grid-template-columns:repeat(auto-fit,
+          minmax(240px,1fr)); }
+  .card { background:var(--card); border:1px solid #232c47; border-radius:16px;
+          padding:22px; text-align:left; }
+  .card .em { font-size:30px; }
+  .card h2 { margin:10px 0 6px; font-size:19px; }
+  .card p { color:var(--mut); font-size:14px; line-height:1.5; }
+  .card .tag { display:inline-block; margin-top:12px; font-size:12px;
+               color:var(--acc2); border:1px solid #2b4b46; padding:3px 10px;
+               border-radius:99px; }
+  footer { max-width:880px; margin:48px auto 0; padding:22px 20px 40px;
+           color:var(--mut); font-size:13.5px; text-align:center;
+           border-top:1px solid #1b2340; }
+  footer a { color:var(--acc2); text-decoration:none; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Tube <span>Autopilot</span></h1>
+    <p>Four automated channels. One factory. New short videos every single day.</p>
+  </div>
+  <div class="grid">
+    <div class="card"><div class="em">🧠</div><h2>Zenith Mindset</h2>
+      <p>Daily discipline, motivation and mindset shifts that compound.</p>
+      <span class="tag">3 Shorts daily</span></div>
+    <div class="card"><div class="em">🔍</div><h2>Fact Vault</h2>
+      <p>Unbelievable-but-true facts about science, space and the world.</p>
+      <span class="tag">3 Shorts daily</span></div>
+    <div class="card"><div class="em">🤖</div><h2>AI Chronicle</h2>
+      <p>AI news and breakthroughs, explained fast for busy humans.</p>
+      <span class="tag">3 Shorts daily</span></div>
+    <div class="card"><div class="em">💰</div><h2>Wealth Signals</h2>
+      <p>Money rules, habits and signals that build quiet wealth.</p>
+      <span class="tag">3 Shorts daily</span></div>
+  </div>
+  <footer>
+    Built by the tube-autopilot pipeline (GitHub Actions).<br>
+    <a href="/privacy.html">Privacy policy</a>
+  </footer>
+</body>
+</html>
